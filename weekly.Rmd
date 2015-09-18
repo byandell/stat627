@@ -39,11 +39,11 @@ Fall 2015 (2 cr)
 * Yandell Stat627 example
   + git version control via Rstudio & GitHub
 * once per machine:
-  + __git config --global user.name 'Brian Yandell'__
-  + __git config --global user.email 'byandell@wisc.edu'__
+  + _git config --global user.name 'Brian Yandell'_
+  + _git config --global user.email 'byandell@wisc.edu'_
 * once per clone (should by automatic within Rstudio using Git Repository)
-  + __git remote add origin https://github.com/datascience-uwmadison/stat627__
-  + __git push -u origin master__
+  + _git remote add origin https://github.com/datascience-uwmadison/stat627_
+  + _git push -u origin master_
 * add Stat627b -- 2 clones on same origin
 * [Test connection between Rstudio & GitHub](http://stat545-ubc.github.io/git00_index.html)
 * navigate web page http://www.stat.wisc.edu/network-skills
