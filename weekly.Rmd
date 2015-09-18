@@ -40,7 +40,7 @@ Fall 2015 (2 cr)
   + git version control via Rstudio & GitHub
 * once per machine:
   + __git config --global user.name 'Brian Yandell'__
-  + ++git config --global user.email 'byandell@wisc.edu'__
+  + __git config --global user.email 'byandell@wisc.edu'__
 * once per clone (should by automatic within Rstudio using Git Repository)
   + __git remote add origin https://github.com/datascience-uwmadison/stat627__
   + __git push -u origin master__
