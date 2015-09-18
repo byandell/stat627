@@ -10,7 +10,7 @@ Fall 2015 (1 cr)
 Instructors: Brian Yandell with Doug Bates  
 Phone: 263-3304  
 email: brian.yandell@wisc.edu  
-Office Hours: Immediately after class or by appointment.  
+Office Hours: TW 1-2pm 1120 MSC  
 
 Based on course taught in Fall 2014 as Stat 692, Network Skills for Statisticians, and on open course notes of Jenny Bryan, University of British Columbia.
 Course Description: This course is aimed at providing statistics graduate students with an understanding of and experience with important aspects of professional development in statistics, including skills with internet tools, sophisticated use of statistical languages (such as R) and other emerging topics.
