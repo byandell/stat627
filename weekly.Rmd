@@ -37,7 +37,7 @@ Fall 2015 (2 cr)
 * Yandell gapminder example
   + ggplot2 basics & git via Rstudio
 * Yandell Stat627 example
-  + git version control via Rstudio & GitHub
+  + [git version control via Rstudio & GitHub](http://stat545-ubc.github.io/git00_index.html)
 * once per machine:
   + _git config --global user.name 'Brian Yandell'_
   + _git config --global user.email 'byandell@wisc.edu'_
