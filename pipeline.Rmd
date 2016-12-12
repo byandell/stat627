@@ -1,0 +1,51 @@
+---
+title: "pipeline"
+author: "Brian S Yandell"
+date: "December 9, 2015"
+output: html_document
+---
+
+This is a skeleton of the idea for a pipeline. The `library` calls should really be in each script, but let's not worry about that for now. 
+
+## Download the data.
+
+The idea with `download` or `getURL` is to get a local copy of the file without actually reading it into R. But it is OK for now read and write the data.
+
+```{r}
+suppressPackageStartupMessages({
+  library(downloader)
+})
+download("https://raw.githubusercontent.com/jennybc/gapminder/master/inst/gapminder.tsv", "mygap.tsv")
+```
+
+## Read data and do analysis.
+
+```{r}
+suppressPackageStartupMessages({
+  library(dplyr)
+})
+gap <- read.delim("mygap.tsv", header=TRUE)
+gapsum <- gap %>% 
+  group_by(continent, country) %>% 
+  select(-year) %>%
+  summarise_each(funs(min,max))
+write.csv(gapsum, file="gapsum.csv",row.names=FALSE)
+```
+
+## Make a plot.
+
+```{r}
+suppressPackageStartupMessages({
+  library(ggplot2)
+})
+gapsum <- read.csv("gapsum.csv", header=TRUE)
+p <- ggplot(gapsum, 
+            aes(x=lifeExp_min, y=lifeExp_max, color=continent)) +
+  geom_point() +
+  ggtitle("life expectancy") +
+  xlab("minimum in years") +
+  ylab("maximum in years")
+ggsave("lifeExp.pdf", p)
+ggsave("lifeExp.png", p)
+ggsave("lifeExp.svg", p)
+```
